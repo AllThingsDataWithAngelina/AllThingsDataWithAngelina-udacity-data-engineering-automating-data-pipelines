@@ -27,7 +27,7 @@ In the DAG, add default parameters according to these guidelines
 
 In addition, configure the task dependencies so that after the dependencies are set, the graph view follows the flow shown in the image below.
 
-![DAG!](./image/sparkify_dag.PNG "sparkify-dag")
+![DAG!](./Project_Images/airflow_execution_start.PNG "sparkify-dag")
 
 **Configure the task dependencies**
 ```
