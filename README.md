@@ -26,6 +26,7 @@ In the DAG, add default parameters according to these guidelines
 5. Do not email on retry
 
 In addition, configure the task dependencies so that after the dependencies are set, the graph view follows the flow shown in the image below.
+
 ![DAG!](./Project_Images/airflow_running_dag.png "airflow_running_dag")
 
 **Configure the task dependencies**
@@ -42,7 +43,7 @@ start_operator  \
 ## Project Files
 
 This project workspace includes 2 folders: dags, plugins as shown in the following figure:
-Project_Images/project_files.png
+
 ![Project Files!](./Project_Images/project_files.png "project_files")
 
 >- The **spakify_dag.py** includes all the imports, tasks and task dependencies <br>
