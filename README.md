@@ -27,7 +27,7 @@ In the DAG, add default parameters according to these guidelines
 
 In addition, configure the task dependencies so that after the dependencies are set, the graph view follows the flow shown in the image below.
 
-![DAG!](./Project_Images/airflow_running_dag.png "airflow_running_dag")
+![DAG!](./Project_Images/airflow_successful_dag.png "airflow_successful_dag")
 
 **Configure the task dependencies**
 ```
