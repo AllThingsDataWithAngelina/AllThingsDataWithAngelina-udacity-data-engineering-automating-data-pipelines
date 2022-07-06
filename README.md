@@ -26,8 +26,7 @@ In the DAG, add default parameters according to these guidelines
 5. Do not email on retry
 
 In addition, configure the task dependencies so that after the dependencies are set, the graph view follows the flow shown in the image below.
-
-![DAG!](./Project_Images/airflow_execution_start.PNG "sparkify-dag")
+![DAG!](./Project_Images/airflow_running_dag.png "airflow_running_dag")
 
 **Configure the task dependencies**
 ```
@@ -43,7 +42,8 @@ start_operator  \
 ## Project Files
 
 This project workspace includes 2 folders: dags, plugins as shown in the following figure:
-![Project Explore!](./image/project-explore.PNG "sparkify")
+Project_Images/project_files.png
+![Project Files!](./Project_Images/project_files.png "project_files")
 
 >- The **spakify_dag.py** includes all the imports, tasks and task dependencies <br>
 >- The **operators** folder includes 4 user defined operators  that will stage the data, transform the data, fill the data warehouse, and run checks on data quality. <br>
@@ -69,10 +69,8 @@ This project workspace includes 2 folders: dags, plugins as shown in the followi
 Use Airflow's UI to configure your AWS credentials and connection to Redshift.
 
 1. Click on the Admin tab and select Connections.
-![admin connections!](./image/admin-connections.png "admin connections")
 
 2. Under Connections, select Create. <br>
-![create connections!](./image/create-connection.png "create connections")
 
 3. On the create connection page, enter the following values:
 
@@ -81,7 +79,7 @@ Use Airflow's UI to configure your AWS credentials and connection to Redshift.
 >- **Login**: Enter your Access key ID from the IAM User credentials you downloaded earlier.
 >- **Password**: Enter your Secret access key from the IAM User credentials you downloaded earlier.
 Once you've entered these values, select Save and Add Another.
-![connection-aws-credentials!](./image/connection-aws-credentials.png "connection-aws-credentials")
+![connection-aws-credentials!](./Project_Images/airflow_aws_credentials.png "airflow_aws_credentials")
 
 4. On the next create connection page, enter the following values:
 
@@ -93,9 +91,11 @@ Once you've entered these values, select Save and Add Another.
 >- **Password**: Enter the password you created when launching your Redshift cluster.
 >- **Port**: Enter **5439**. <br>
 
-![cluster-details!](./image/cluster-details.png "cluster-details")
+![cluster-details!](./Project_Images/aws_cluster_endpoint.png "aws_cluster_endpoint")
 
-![connection-redshift!](./image/connection-redshift.png "connection-redshift")
+![cluster-details_!](./Project_Images/aws_database_config.png "aws_database_config")
+
+![connection-redshift!](./Project_Images/airflow_redshift_connection.png "airflow_redshift_connection")
 
 
 Once you've entered these values, select **Save**.
